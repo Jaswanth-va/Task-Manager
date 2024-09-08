@@ -1,0 +1,107 @@
+.task-viewer{
+    position: absolute;
+    width:100vw;
+    height: 100vh;
+    top:0;
+    background-color: rgba(0,0,0,0.5);
+
+}
+.edit-page{
+    width:500px;
+    height:400px;
+    margin:auto;
+    margin-top: 40px;
+    background-color: #279af1;
+    padding: 20px;
+    border-radius: 5px;
+    border: 3px solid white;
+}
+.text-area2{
+    resize: none;
+    border-radius:5px;
+    padding: 10px;
+    width:100%;
+    height:100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+}
+.task-description-edit{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius:5px;
+    padding: 10px;
+    width:100%;
+    height:100px;
+    background-color: white;
+}
+
+.description-edit-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.edit-cancel{
+    right:0;
+    top:2;
+    position: absolute;
+    align-self: right;
+    width: fit-content;
+    width:50px;
+    background-color: red;
+    border: none;
+    border-radius: 0 4px 0 0 ;
+    padding: 3px;
+    color:white;
+    cursor: pointer;
+}
+
+.edit-cancel:hover{
+    background-color: black;
+    color: red;
+}
+.save-cancel-btns{
+    margin-top: 100px;
+}
+.text-area3{
+    border-radius:5px;
+    padding: 10px;
+    width:100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    font-size: medium;
+}
+
+.task-tile-edit{
+    border-radius:5px;
+    padding: 10px;
+    width:100%;
+    height:40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    font-size: larger;
+    background-color: white;
+}
+
+.title-edit-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.cancel-edit-button{
+    padding: 10px;
+    background-color: coral;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.save-button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: lightgreen;
+    cursor: pointer;
+}

@@ -1,0 +1,123 @@
+.add-task{
+    display:flex;
+    flex-direction: column;
+}
+.task-form{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.task{
+    background-color: #279af1;
+    border-radius: 5px;
+    padding:5px;
+    cursor: grab;
+    border:3px solid white;
+    display: flex;
+    flex-direction: column;
+    color: rgb(45, 45, 45);
+    max-width: 280px;
+}
+
+.task-title{
+    margin: 5px;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.task-description{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 5px;
+    font-size: medium;
+}
+.task:active{
+    opacity: 1;
+    border:3px solid red;
+    
+}
+.hide-form{
+    display: none;
+}
+
+.add-task-btns{
+    margin-top:5px;
+    display: flex;
+    gap:10px;
+}
+.add-task-button{
+    flex-grow: 1;
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+    font-size: medium;
+}
+.create-task-button{
+    flex-grow: 1;
+    border-radius: 5px ;
+    border: none;
+    padding: 7px;
+    font-size: medium;
+}
+.cancel-button{
+    flex-grow: 1;
+    border-radius:5px ;
+    border: none;
+    padding: 7px;
+    font-size: medium;
+    color: white;
+    background-color: red;
+}
+.cancel-button:hover{
+    color: red;
+    background-color: white;
+}
+.text-area{
+    resize: none;
+    border-radius:5px;
+    padding: 10px;
+    /* text-indent: 5px; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* outline: 1px solid red; */
+    /* border: none; */
+    font-size: medium;
+
+}
+
+.title-input{
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.task-controls{
+    display: flex;
+    gap:5px;
+}
+.task-button{
+    padding: 7px;
+    border:none;
+    border-radius: 5px;
+    /* flex-grow: 1; */
+}
+
+/* .edit-button{
+    background-color: red;
+} */
+.edit-button:hover{
+    background-color: green;
+    color:white;
+}
+
+.delete-button:hover{
+    background-color: red;
+    color: white;
+}
+
+.task-description{
+    white-space:wrap;
+    word-break: break-all;
+    margin-bottom: 10px;
+}
+

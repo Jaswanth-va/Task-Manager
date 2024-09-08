@@ -1,0 +1,53 @@
+.lists-container{
+    display:flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    flex-grow: 1;
+    padding-top: 50px;
+    justify-content: left;
+    gap:20px;
+    padding-inline: 50px;
+    background-color:#279af1;
+}
+.list{
+    min-width:300px;
+    padding-inline: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(45,45,45);
+    color:white;
+    height:fit-content;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.tasks-container{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.list-header{
+    display: flex;
+}
+
+.list-title{
+    flex-basis: 80%;
+    word-break:break-all;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.list-button{
+    align-self: center;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+}
+
+.list-btns{
+    display: flex;
+    gap:5px;
+
+}

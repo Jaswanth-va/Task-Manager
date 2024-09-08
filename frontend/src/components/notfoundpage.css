@@ -1,0 +1,34 @@
+/* Center the content and make the 404 large and bold */
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  
+  .not-found-container h1 {
+    font-size: 8rem; /* Make the 404 number large */
+    font-weight: bold;
+    margin: 0;
+    color: #ff6347; /* Tomato color for 404 */
+  }
+  
+  .not-found-container p {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .not-found-container a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .not-found-container a:hover {
+    text-decoration: underline;
+  }
+  
