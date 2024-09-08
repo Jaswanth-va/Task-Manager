@@ -3,7 +3,6 @@ import axios from "axios";
 import {Link} from "react-router-dom";
 import "./login.css";
 import { useNavigate } from "react-router-dom";
-const url = "http://localhost:3000";
 
 export default function LoginPage({}){
     const [email,setEmail] = useState("");
@@ -33,7 +32,7 @@ export default function LoginPage({}){
     }
     async function login(){
             try {
-                const {data} =  await axios.post(`${url}/api/v1/auth/login`,{email,password});
+                const {data} =  await axios.post("http://localhost:3000/api/v1/auth/login",{email,password});
                 if(data.token){
                     localStorage.setItem('token', data.token);
                 }
