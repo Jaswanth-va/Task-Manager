@@ -6,9 +6,7 @@ export default function LogoutButton(){
     const navigate = useNavigate();
     function handleClick(){
         localStorage.removeItem("token");
-        navigate("/login");
-        console.log("jas");
-        
+        navigate("/login");        
     }
     return(
         <div className="log-out">
