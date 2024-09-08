@@ -21,12 +21,12 @@ export default function TaskManager() {
     console.log(token);
     async function getAllTasks() {
       try {
-        const { data: { lists } } = await axios.get("http://localhost:5000/api/v1/lists", {
+        const { data: { lists } } = await axios.get("https://task-manager-backend-lahn.onrender.com/api/v1/lists", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
         });
-        const { data: { tasks } } = await axios.get("http://localhost:5000/api/v1/tasks", {
+        const { data: { tasks } } = await axios.get("https://task-manager-backend-lahn.onrender.com/api/v1/tasks", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -40,7 +40,7 @@ export default function TaskManager() {
   
     async function createNewTask(newTask) {
       try {
-        const { data: { task } } = await axios.post("http://localhost:5000/api/v1/tasks", newTask, {
+        const { data: { task } } = await axios.post("https://task-manager-backend-lahn.onrender.com/api/v1/tasks", newTask, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -54,7 +54,7 @@ export default function TaskManager() {
   
     async function createNewList(newList) {
       try {
-        const { data: { list } } = await axios.post("http://localhost:5000/api/v1/lists", newList, {
+        const { data: { list } } = await axios.post("https://task-manager-backend-lahn.onrender.com/api/v1/lists", newList, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -67,7 +67,7 @@ export default function TaskManager() {
   
     async function deleteTask(taskId){
       try {
-        const { data: { task } } = await axios.delete(`http://localhost:5000/api/v1/tasks/${taskId}`, {
+        const { data: { task } } = await axios.delete(`https://task-manager-backend-lahn.onrender.com/api/v1/tasks/${taskId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -80,7 +80,7 @@ export default function TaskManager() {
   
     async function deleteList(listId){
       try {
-        const { data: { list } } = await axios.delete(`http://localhost:5000/api/v1/lists/${listId}`, {
+        const { data: { list } } = await axios.delete(`https://task-manager-backend-lahn.onrender.com/api/v1/lists/${listId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -93,7 +93,7 @@ export default function TaskManager() {
   
     async function editTask(taskId,newTask){
       try {
-        const { data: { task } } = await axios.patch(`http://localhost:5000/api/v1/tasks/${taskId}`,newTask, {
+        const { data: { task } } = await axios.patch(`https://task-manager-backend-lahn.onrender.com/api/v1/tasks/${taskId}`,newTask, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
