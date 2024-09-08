@@ -42,7 +42,7 @@ export default function RegisterPage(){
     }
     async function signUp(){
         try {
-        const {data} =  await axios.post("http://localhost:5000/api/v1/auth/register",{name,email,password});
+        const {data} =  await axios.post("https://task-manager-backend-lahn.onrender.com/api/v1/auth/register",{name,email,password});
         if(data.token){
             localStorage.setItem('token', data.token);
         }        
