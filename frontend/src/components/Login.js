@@ -32,7 +32,7 @@ export default function LoginPage({}){
     }
     async function login(){
             try {
-                const {data} =  await axios.post("http://localhost:3000/api/v1/auth/login",{email,password});
+                const {data} =  await axios.post("https://task-manager-backend-lahn.onrender.com/api/v1/auth/login",{email,password});
                 if(data.token){
                     localStorage.setItem('token', data.token);
                 }
