@@ -25,7 +25,7 @@ export default function PrivateRoute(){
   const navigate = useNavigate();
   async function verifyToken(){
     try {
-      const {data} = await axios.get("http://localhost:5000/",{
+      const {data} = await axios.get("https://task-manager-backend-lahn.onrender.com/",{
         headers: {
           Authorization: `Bearer ${token}`,
         },
