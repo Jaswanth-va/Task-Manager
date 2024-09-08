@@ -3,7 +3,7 @@ import { configDotenv } from "dotenv";
 configDotenv();
 import "express-async-errors";
 import express from "express";
-import connectDB from "./db/connectDb.js";
+import connectDB from "./db/connectDB.js";
 import taskRouter from "./routes/taskRoutes.js";
 import authRouter from "./routes/auth.js"
 import errorHandlerMiddleware from "./middleware/errorHandler.js";
